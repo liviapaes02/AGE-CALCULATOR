@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="CALCULADORA">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="Lívia Paes">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Age calculator app</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    div.conteiner{
+        width: 400px;
+        height: auto;
+        background-color: white;
+        padding-left: 50px;
+        padding-top: 50px;
+        padding-bottom: 10px;
+        padding-right: 50px;
+        text-align: center;
+        border-radius: 30px;
+        display: block; 
+        margin-left: auto; 
+        margin-right: auto;
+        
+    }
+    hr {
+    display: block;
+    unicode-bidi: isolate;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    overflow: hidden;
+    border-style: inset;
+    border-width: 1px;
+}
+  </style>
+</head>
+
+<h2>How old are you?</h2>
+
+<body>
+
+
+      <form>
+        <div class="conteiner">
+        DAY
+            <div class="block">
+            <label for="day">
+            </label>
+            <input type="number" id="day" placeholder="DD">
+            <small></small>
+          </div>
+
+        MONTH
+          <div class="block">
+            <label for="month">
+            </label>
+            <input type="number" id="month" placeholder="MM">
+            <small></small>
+          </div>
+
+        YEAR
+          <div class="block">
+            <label for="year">
+            </label>
+            <input type="number" id="year" placeholder="YYYY">
+            <small></small>
+          </div>
+
+
+        <br></br>
+          <div class="submit_block">
+            <hr>
+          <button type="submit" class="submit_btn"></button>
+        </div>
+        
+      </form>
+
+
+      <div class="output">
+        <h3><span id="YYYY">--</span> Years</h3>
+        <h3><span id="MM">--</span> Months</h3>
+        <h3><span id="DD">--</span> Days</h3>
+      </div>
+
+
+
+  <script src="calculadora.js"></script>
+
+</div>
+
+
+<div class="attribution">
+    <br></br>
+    <footer>
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Lívia Paes</a>.
+    </footer>
+  </div>
+</body>
+</html>
